@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3f3; /* Light peach background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff; /* White background for container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ffb899; /* Peach border on focus */
+    outline: none;
+}
+
+select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ffb899; /* Peach button */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #eaa890; /* Darker peach on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    background-color: #f9f9f9; /* Light gray for filter buttons */
+    border: 2px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    color: #eaa890;
+}
+
+.filters button.active {
+    background-color: #ffb899; /* Peach for active filter */
+    color: #fff;
+    border-color: #ffb899;
+}
+
+.filters button:hover {
+    background-color: #eaa890; /* Darker peach on hover */
+    color: #f9f3f3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff; /* White background for list items */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+li:hover {
+    background-color: #f9f3f3; /* Light peach on hover */
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888; /* Gray color for completed tasks */
+}
+
+li .priority {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #888;
+}
+
+button.delete-btn,
+button.edit-btn,
+button.finish-btn {
+    border: none;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+button.delete-btn {
+    background-color: #f44336; /* Red for delete button */
+}
+
+button.delete-btn:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+button.edit-btn {
+    background-color: #ff9800; /* Orange for edit button */
+}
+
+button.edit-btn:hover {
+    background-color: #fb8c00; /* Darker orange on hover */
+}
+
+button.finish-btn {
+    background-color: #4caf50; /* Green for finish button */
+}
+
+button.finish-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
